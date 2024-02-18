@@ -1,0 +1,6 @@
+[20-Mar-2022 22:14:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'republ23'@'localhost' (using password: YES) in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
+[18-Aug-2022 03:36:42 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
+[18-Aug-2022 03:36:46 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
+[18-Aug-2022 03:36:58 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
+[02-Nov-2022 06:52:44 UTC] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
+[14-Mar-2023 22:11:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/republ23/public_html/smktumapel.sch.id/web/admin/inc/koneksi.php on line 7
