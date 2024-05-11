@@ -1,6 +1,6 @@
 <?php
 	include("koneksi.php");     
-	switch ($_POST['jenis']) {
+	switch ($_GET['jenis']) {
 		//ambil data kota / kabupaten
 		case 'kota':
 		$id_provinces = $_POST['id_provinces'];

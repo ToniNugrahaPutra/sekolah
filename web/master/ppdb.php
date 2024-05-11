@@ -21,9 +21,45 @@
                                     <div class="card-body">
                                         <form action="master/do.php" method="post" enctype="multipart/form-data" class="steps-validation wizard-circle">
                                             <!-- Step 1 -->
-                                            <h6><i class="step-icon fas fa-user"></i>BIODATA</h6>
+                                            <h6><i class="step-icon fas fa-user"></i>DATA PERSONAL</h6>
 
                                             <fieldset>
+                                            <div class="row">
+
+                                            <div class="col-md-6">
+                                                      <div class="font-small-3">Petugas Pendaftaran</div>
+                                                        <fieldset class="form-group position-relative input-divider-right">
+                                                            <select class="custom-select form-control" name="jk">
+                                                                <option>Petugas 1</option>
+                                                                <option>Petugas 2</option>
+                                                                <option>Petugas 3</option>
+                                                                <option>Petugas 4</option>
+                                                                <option>Petugas 5</option>
+                                                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="fas fa-users"></i>
+                                                            </div>
+                                                        </fieldset> 
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                      <div class="font-small-3">Jenjang Paket</div>
+                                                        <fieldset class="form-group position-relative input-divider-right">
+                                                            <select class="custom-select form-control" name="jk">
+                                                                <option>Paket A</option>
+                                                                <option>Paket B</option>
+                                                                <option>Paket C</option>
+                                                                <option>Paket D</option>
+                                                                
+                                                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="fas fa-bookmark"></i>
+                                                            </div>
+                                                        </fieldset> 
+                                                    </div>
+                                                    </div>
+
+                                            
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                       <div class="font-small-3">Nama Lengkap</div>
@@ -72,10 +108,303 @@
                                                     </div>
                                                                                                         
                                                 </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="font-small-3">NISN</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="nisn" placeholder="Isi Sesuai NISN">
+                <div class="form-control-position">
+                    <i class="fas fa-id-card"></i>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-md-6">
+            <div class="font-small-3">Nomor Induk Kependudukan</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="nik" placeholder="Isi Sesuai NIK">
+                <div class="form-control-position">
+                    <i class="fas fa-id-card"></i>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="font-small-3">Nomor Kartu Keluarga</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="no_kk" placeholder="Isi Sesuai No KK">
+                <div class="form-control-position">
+                    <i class="fas fa-id-card"></i>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-md-6">
+            <div class="font-small-3">Tempat Lahir</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
+                <div class="form-control-position">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+        <div class="row">
+        <div class="col-md-6">
+            <div class="font-small-3">Agama</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <select class="custom-select form-control" name="agama" placeholder="Pilih Agama">
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Buddha</option>
+                </select>
+                <div class="form-control-position">
+                    <i class="fas fa-praying-hands"></i>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-md-6">
+            <div class="font-small-3">Alamat Lengkap</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="alamat" placeholder="Alamat Lengkap">
+                <div class="form-control-position">
+                    <i class="fas fa-location-crosshairs"></i>
+                </div>
+            </fieldset>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        <div class="font-small-3">RT</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="rt" placeholder="RT">
+                <div class="form-control-position">
+                    <i class="fas fa-location-crosshairs"></i>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-md-6">
+        <div class="font-small-3">RW</div>
+            <fieldset class="form-group position-relative input-divider-right">
+                <input type="text" class="form-control" name="rw" placeholder="RW">
+                <div class="form-control-position">
+                    <i class="fas fa-location-crosshairs"></i>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Desa/Kelurahan</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="desa_kelurahan" placeholder="Desa/Kelurahan">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Kecamatan</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="kecamatan" placeholder="Kecamatan">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Kota/Kabupaten</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="kota_kabupaten" placeholder="Kota/Kabupaten">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Kewarganegaraan</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="kewarganegaraan" placeholder="Kewarganegaraan">
+            <div class="form-control-position">
+                <i class="fas fa-globe"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Anak ke </div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="anak_ke" placeholder="Anak ke Berapa">
+            <div class="form-control-position">
+                <i class="fas fa-child"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Dari Berapa Bersaudara</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="dari_bersaudara" placeholder="Dari Berapa Bersaudara">
+            <div class="form-control-position">
+                <i class="fas fa-users"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Tinggi Badan (cm)</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="tinggi_badan" placeholder="Tinggi Badan (cm)">
+            <div class="form-control-position">
+                <i class="fas fa-ruler-vertical"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Berat Badan (kg)</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="berat_badan" placeholder="Berat Badan (kg)">
+            <div class="form-control-position">
+                <i class="fas fa-weight"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Nomor HP</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nomor_hp" placeholder="Nomor HP">
+            <div class="form-control-position">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Nama Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nama_ayah" placeholder="Nama Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-male"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Tahun Lahir Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="tahun_lahir_ayah" placeholder="Tahun Lahir Ayah">
+            <div class="form-control-position">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">NIK Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nik_ayah" placeholder="NIK Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-id-card"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Pekerjaan Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="pekerjaan_ayah" placeholder="Pekerjaan Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-briefcase"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Penghasilan Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="penghasilan_ayah" placeholder="Penghasilan Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-money-bill"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Alamat Lengkap Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="alamat_ayah" placeholder="Alamat Lengkap Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <div class="font-small-3">Nomor Telepon/HP Ayah</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nomor_telepon_ayah" placeholder="Nomor Telepon/HP Ayah">
+            <div class="form-control-position">
+                <i class="fas fa-phone"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">Nama Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nama_ibu" placeholder="Nama Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-female"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Tahun Lahir Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="tahun_lahir_ibu" placeholder="Tahun Lahir Ibu">
+            <div class="form-control-position">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+
                                             </fieldset>
 
                                             <!-- Step 2 -->
-                                            <h6><i class="step-icon fas fa-graduation-cap"></i> PENDIDIKAN</h6>
+                                            <h6><i class="step-icon fas fa-graduation-cap"></i> DATA PENDIDIKAN</h6>
                                             <fieldset>
                                                 <div class="row">
                                                    <div class="col-md-6">
@@ -133,7 +462,7 @@ while ($ahli = mysqli_fetch_array($result)){
                                             </fieldset>
 
                                             <!-- Step 3 -->
-                                            <h6><i class="step-icon far fa-address-book"></i> KONTAK</h6>
+                                            <h6><i class="step-icon far fa-address-book"></i> UPLOAD DOKUMEN</h6>
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-md-6">
