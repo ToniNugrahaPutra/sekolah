@@ -315,7 +315,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <div class="font-small-3">Tahun Lahir Ayah</div>
+        <div class="font-small-3">Tahun Lahir</div>
         <fieldset class="form-group position-relative input-divider-right">
             <input type="text" class="form-control" name="tahun_lahir_ayah" placeholder="Tahun Lahir Ayah">
             <div class="form-control-position">
@@ -390,7 +390,7 @@
         </fieldset>
     </div>
     <div class="col-md-6">
-        <div class="font-small-3">Tahun Lahir Ibu</div>
+        <div class="font-small-3">Tahun Lahir</div>
         <fieldset class="form-group position-relative input-divider-right">
             <input type="text" class="form-control" name="tahun_lahir_ibu" placeholder="Tahun Lahir Ibu">
             <div class="form-control-position">
@@ -399,7 +399,67 @@
         </fieldset>
     </div>
 </div>
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">NIK Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nik_ibu" placeholder="NIK Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-id-card"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Pekerjaan Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Pekerjaan Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-briefcase"></i>
+            </div>
+        </fieldset>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class="font-small-3">Penghasilan Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="penghasilan_ibu" placeholder="Penghasilan Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-money-bill"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Alamat Lengkap Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="alamat_ibu" placeholder="Alamat Lengkap Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+    </div>
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">Nomor Telepon/HP Ibu</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nomor_telepon_ibu" placeholder="Nomor Telepon/HP Ibu">
+            <div class="form-control-position">
+                <i class="fas fa-phone"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Nama Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nama_wali" placeholder="Nama Wali">
+            <div class="form-control-position">
+                <i class="fas fa-female"></i>
+            </div>
+        </fieldset>
+    </div>
 
+</div>
 
                                             </fieldset>
 
