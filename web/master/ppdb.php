@@ -458,9 +458,67 @@
             </div>
         </fieldset>
     </div>
-
 </div>
-
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">Tahun Lahir</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="tahun_lahir_wali" placeholder="Tahun Lahir Wali">
+            <div class="form-control-position">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">NIK Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nik_wali" placeholder="NIK Wali">
+            <div class="form-control-position">
+                <i class="fas fa-id-card"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">Pekerjaan Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Pekerjaan Wali">
+            <div class="form-control-position">
+                <i class="fas fa-briefcase"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Penghasilan Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="penghasilan_wali" placeholder="Penghasilan Wali">
+            <div class="form-control-position">
+                <i class="fas fa-money-bill"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<div class="row">
+<div class="col-md-6">
+        <div class="font-small-3">Alamat Lengkap Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="alamat_wali" placeholder="Alamat Lengkap Wali">
+            <div class="form-control-position">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <div class="font-small-3">Nomor Telepon/HP Wali</div>
+        <fieldset class="form-group position-relative input-divider-right">
+            <input type="text" class="form-control" name="nomor_telepon_wali" placeholder="Nomor Telepon/HP Wali">
+            <div class="form-control-position">
+                <i class="fas fa-phone"></i>
+            </div>
+        </fieldset>
+    </div>
+</div>
                                             </fieldset>
 
                                             <!-- Step 2 -->
