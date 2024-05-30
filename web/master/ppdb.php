@@ -727,24 +727,25 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_ijasah">
+                                                                        name="file_ijasah" id="file_ijasah" required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_ijasah">Pilih file</label>
+                                                                    <div id="preview_ijasah"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
-
 
                                                                 <div class="font-small-3">Foto Skhun <sup
                                                                         class="badge badge-danger">Format JPG
                                                                         Max.100kb</sup></div>
                                                                 <fieldset
                                                                     class="form-group position-relative input-divider-right">
-                                                                    <input type="file_skhun"
+                                                                    <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_skhun">
+                                                                        name="file_skhun" id="file_skhun" required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_skhun">Pilih file</label>
+                                                                    <div id="preview_skhun"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
 
                                                                 <div class="font-small-3">Foto KK <sup
@@ -754,10 +755,11 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_kk">
-                                                                    <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        name="file_kk" id="file_kk" required>
+                                                                    <label class="custom-file-label" for="file_kk">Pilih
+                                                                        file</label>
+                                                                    <div id="preview_kk"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
 
                                                             </div>
@@ -770,11 +772,13 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_ktp">
+                                                                        name="file_ktp" id="file_ktp" required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_ktp">Pilih file</label>
+                                                                    <div id="preview_ktp"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
+
                                                                 <div class="font-small-3">Foto Akta kelahiran <sup
                                                                         class="badge badge-danger">Format JPG
                                                                         Max.100kb</sup></div>
@@ -782,11 +786,14 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_akta_lahir">
+                                                                        name="file_akta_lahir" id="file_akta_lahir"
+                                                                        required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_akta_lahir">Pilih file</label>
+                                                                    <div id="preview_akta_lahir"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
+
                                                                 <div class="font-small-3">Foto KTP AYAH <sup
                                                                         class="badge badge-danger">Format JPG
                                                                         Max.100kb</sup></div>
@@ -794,12 +801,15 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_ktp_ayah">
+                                                                        name="file_ktp_ayah" id="file_ktp_ayah"
+                                                                        required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_ktp_ayah">Pilih file</label>
+                                                                    <div id="preview_ktp_ayah"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
                                                             </div>
+
                                                             <div class="col-md-6">
                                                                 <div class="font-small-3">Foto KTP IBU <sup
                                                                         class="badge badge-danger">Format JPG
@@ -808,10 +818,11 @@
                                                                     class="form-group position-relative input-divider-right">
                                                                     <input type="file"
                                                                         class="custom-file-input required"
-                                                                        name="file_ktp_ibu">
+                                                                        name="file_ktp_ibu" id="file_ktp_ibu" required>
                                                                     <label class="custom-file-label"
-                                                                        for="inputGroupFile01">Pilih file</label>
-
+                                                                        for="file_ktp_ibu">Pilih file</label>
+                                                                    <div id="preview_ktp_ibu"></div>
+                                                                    <!-- Pratinjau gambar -->
                                                                 </fieldset>
                                                             </div>
                                                             <div class="col-md-6">
@@ -961,3 +972,40 @@
     </div>
 </div>
 <!-- END: Content-->
+<script>
+    $(document).ready(function () {
+        function readURL(input, previewId) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#' + previewId).html('<img src="' + e.target.result + '" width="100" height="100" />');
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#file_ijasah").change(function () {
+            readURL(this, 'preview_ijasah');
+        });
+        $("#file_skhun").change(function () {
+            readURL(this, 'preview_skhun');
+        });
+        $("#file_kk").change(function () {
+            readURL(this, 'preview_kk');
+        });
+        $("#file_ktp").change(function () {
+            readURL(this, 'preview_ktp');
+        });
+        $("#file_akta_lahir").change(function () {
+            readURL(this, 'preview_akta_lahir');
+        });
+        $("#file_ktp_ayah").change(function () {
+            readURL(this, 'preview_ktp_ayah');
+        });
+        $("#file_ktp_ibu").change(function () {
+            readURL(this, 'preview_ktp_ibu');
+        });
+    });
+</script>
