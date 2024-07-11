@@ -94,24 +94,7 @@ if (isset($_SESSION['nm_user'])) {
    while ($b=mysqli_fetch_array($executeSat)) {    
 	   $id_kat_anggota	= $b['id_kategori'];
 	   $nm_kat_anggota	= $b['nm_kat_anggota'];
-	   if ($nm_kat_anggota == 'Manajemen') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fas fa-user-tie'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Operator') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-address-card'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Guru') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-chalkboard-user'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Siswa') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-user'></i></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Pegawai') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-image-portrait'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Alumni') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-user-graduate'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }elseif ($nm_kat_anggota == 'Wali Siswa') {
-    		$linkpage="<a href='?menu=data_anggota&kategori=$id_kat_anggota'><i class='fa-solid fa-user-group'></i> <span class='menu-item' data-i18n='List View'>$nm_kat_anggota </span></a>";
-	   }
-	   else {
-    	$linkpage="";
-	   }
+	
 ?>
 				   <li class="nav-item"><?php echo $linkpage; ?></li>
                     <?php } ?>
